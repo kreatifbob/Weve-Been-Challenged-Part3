@@ -21,7 +21,7 @@
 4. Display password to the page 
  
  # 2. Site URL 
- https://github.com/kreatifbob/Weve-Been-Challenged-Part3.git
+ https://kreatifbob.github.io/Weve-Been-Challenged-Part3/
 
  # 3. Key Topics for .JS file
  Declaring variables
