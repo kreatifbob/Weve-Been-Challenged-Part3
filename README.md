@@ -29,4 +29,4 @@
 
  # 4. Screenshot 
  See screeshot below to deployed URL
- ![plot](./......png)
+ ![plot](./Develop/Screenshot%202022-06-05%2023.10.02.png)
