@@ -7,6 +7,7 @@ var generateBtn = document.querySelector("#generate");
 
 
   //  1. Prompt the user for the password criteria
+  var pslength=prompt ("Enter password length! Note: Min. 8 - Max 128 ")
   //    a. Password lengths 8 to 128
   // 	  b. Lowercase, uppercase, numbers and special characters
   //  2. Validate the input 
