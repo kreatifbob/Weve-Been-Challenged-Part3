@@ -1,5 +1,4 @@
-# Password Generator Starter Code
-# Weve-Been-Challenged-Part3
+ # Weve-Been-Challenged-Part3
  When Coding Bootcamp Challenges Me Part3
 
  # Table of Contents 
@@ -22,9 +21,12 @@
 4. Display password to the page 
  
  # 2. Site URL 
- https://kreatifbob....
+ https://github.com/kreatifbob/Weve-Been-Challenged-Part3.git
 
  # 3. Key Topics for .JS file
+ Declaring variables
+ Validating input via form syle or prompt style
+ Generating randomization functions
 
 
  # 4. Screenshot 
