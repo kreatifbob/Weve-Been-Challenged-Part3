@@ -26,7 +26,7 @@ function masterPassword() {
 
   
     //  3. Generate password based on criteria 
-    function generatePassword(length = 8) {
+    function masterPassword() {
     let password = '';
     let psSpecifyVarLower = "abcdefghijklmnopqrstuvwxyz";
     let psSpecifyVarUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -47,6 +47,7 @@ function masterPassword() {
    }
   }
  masterPassword();
+
 
 
 
