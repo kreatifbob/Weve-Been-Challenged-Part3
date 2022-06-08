@@ -1,65 +1,82 @@
+var generateBtn = document.querySelector("#generate");
 // Assignment code here
+function generatePassword() {
 
-
-// Get references to the #generate element
-function masterPassword() {
-  var generateBtn = document.querySelector("#generate");
-
+  let chars = '';
+  let lowercases = "abcdefghijklmnopqrstuvwxyz";
+  let uppercases = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let numbers = "0123456789";
+  let Special = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
 
   //  1. Prompt the user for the password criteria
   //    a. Password lengths 8 to 128
-  var psLengthVar=confirm ("Enter password length! Note: Min. 8 - Max 128 ");
+  let p = '';
+  let pLength=prompt ("Select a password length between 8 and 128");
   // 	  b. Lowercase, 
-  var psSpecifyVarLower=confirm ("Should password include any lowercases")
+  let pLowercases=confirm ("Should password include any lowercases")
   //    c. Uppercase, 
-  var psSpecifyVarUpper=confirm ("Should password include any uppercases")
+  let pUppercases=confirm ("Should password include any uppercases")
   //    d. Numbers 
-  var psSpecifyVarNumbers=confirm ("Should password include any numbers")
+  let pNumbers=confirm ("Should password include any numbers")
   //    e. Special characters
-  var psSpecifyVarSpecial=confirm ("Should password include any numbers")
-  //  2. Validate the input 
-  
-  if (psLengthVar<8 || psLengthVar>128) {
-    masterPassword();
+  let pSpecial=confirm ("Should password include any special characters")
+
+  if (pLength<8 || pLength>128) {
+    alert.text="Please try again"
+    console.log();
+    return
    }
-  
+
+  if (pLowercases) {
+    chars+=lowercases;
+
+   }
+   
+
+  if (pUppercases) {
+    chars+=uppercases
+    } 
+   
+
+  if (pNumbers) {
+    chars+=numbers;
+
+   }
+   
+
+  if (pSpecial) {
+    chars+=Special
+
+   }
+   console.log(chars)
 
   
-    //  3. Generate password based on criteria 
-    function masterPassword() {
-    let password = '';
-    let psSpecifyVarLower = "abcdefghijklmnopqrstuvwxyz";
-    let psSpecifyVarUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    let psSpecifyVarNumbers = "0123456789";
-    let psSpecifyVarSpecial = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
-    let psLengthVar = length;
-   
-    let array = [];
-    for (let i=0; i<length; i++){
-      array.push(Math.floor(Math.random() * chars.length)); 
-    }
-   
-    for (let i = 0; i < passwordLength; i++) {
-      password += chars[array[i]]; 
-    }
-
-    return password;
-   }
+ 
+  for (let i = 0; i < pLength; i++) {
+    p += chars[Math.floor(Math.random() * chars.length)]; 
   }
- masterPassword();
+
+    return p; 
 
 
 
+  //for loop
 
-  //  4. Display password to the page 
-  function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+  //stop loop based on entered prompt whıch ıs length of password 
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+  //call function
+  function writePassword() {
+    var password = generatePassword();
+    //display
+    var passwordText = document.querySelector("#password");
+  
+    passwordText.value = password;
+  
+  }
+  
+  // Add event listener to generate button
+  generateBtn.addEventListener("click", writePassword);
+
+
 
